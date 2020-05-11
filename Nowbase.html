@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORLD ESTAE</title>
+
+    <!-- css style -->
+    <link rel="stylesheet" href="css/slyleTopBarUser.css">
+    <link rel="stylesheet" href="css/slyleContant.css">
+
+    <!--  -->
+</head>
+
+<body>
+    <!-- Top-navbar logo and Username, Password, button Login, Sigh up, and Reset password -->
+    <div class="container">
+
+        <div class="container-grid">
+
+            <div class="logo">
+
+                <img src="img/logo.png" id="image_logo" width="40px" height="40px">
+
+                <a href="#" id="logo_item">
+
+                    <span style="color: #f1c232ff;">
+                        
+                         WORLD
+
+                    </span>
+
+                    <span>
+
+                        ESTATE
+
+                    </span>
+
+                </a>
+
+
+            </div>
+
+            <div class="user-topBar">
+
+                <form action="#" name="">
+
+                    <ul>
+
+                        <div class="UserAndPass">
+                            <li>
+                                <input type="text" name="" placeholder="Username">
+                            </li>
+                            <input type="password" name="" placeholder="Password">
+                            </li>
+                        </div>
+
+                        <div class="A-TopBar">
+
+                            <li>
+                                <form action="#">
+                                    <button onclick="val_lgin();canLogin=false;" id="A-TopBar1">
+
+                                        LOG IN
+
+                                    </button>
+                                </form>
+                            </li>
+
+                            <li>
+                                <!-- <form action=""> -->
+                                <button onclick="window.open('#');" id="A-TopBar2">
+
+                                    Reset password
+
+                                </button>
+                                <!-- </form> -->
+                            </li>
+
+                            <li>
+                                <form action="#">
+                                    <button id="A-TopBar3">
+
+                                        Sigh up
+
+                                    </button>
+                                </form>
+                            </li>
+
+                        </div>
+
+                    </ul>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="MenuAndContant">
+        <div class="MenuAndContant-grid">
+            <div class="MenuLeftNavbar" style="scrollbar-width: 20px;">
+
+                <div id="Menu-Item">
+
+                    <div>
+                        <a href="#" id="Menu_Left-item1">
+                            <span>
+
+                                HOME
+
+                            </span>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#" id="Menu_Left-item">
+                            <span>
+
+                                INVESTER
+
+                            </span>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#" id="Menu_Left-item">
+                            <span>
+
+                                SELLER
+
+                            </span>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#" id="Menu_Left-item">
+                            <span>
+
+                                ABOUT
+
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="Menu-Item-CONTACT">
+
+                    <div>
+                        <a href="#" id="Menu-Item-CONTACT1">
+                            <span>
+
+                                CONTACT
+
+                            </span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="Contant-grid">
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="img/img_mountains_wide.jpg" style="width:100%">
+                        <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="img/img_mountains_wide.jpg" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="img/img_mountains_wide.jpg" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) {
+                            slideIndex = 1
+                        }
+                        if (n < 1) {
+                            slideIndex = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                    }
+                </script>
+
+                <div class="Contant-ShowImage_grid">
+
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="img/HOME.jpg" alt="Cinque Terre" width="800" height="400">
+                        </a>
+                        <div class="desc">ABOUT</div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="img/2.jpg" alt="Cinque Terre" width="800" height="400">
+                        </a>
+                        <div class="desc">ABOUT</div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="img/3.jpg" alt="Cinque Terre" width="800" height="400">
+                        </a>
+                        <div class="desc">ABOUT</div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="img/4.jpg" alt="Cinque Terre" width="800" height="400">
+                        </a>
+                        <div class="desc">ABOUT</div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>

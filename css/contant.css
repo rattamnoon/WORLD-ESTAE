@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.contant {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contant-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: blue;
+}
+
+.contant-grid-Item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 20px;
+}
